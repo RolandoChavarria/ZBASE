@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group de Interfaces SO Linux</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZST0001_RFC_INTERFACETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZST0001_RFC_INTERFACE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZST_GEN_JOB_INTERFACE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Generador  Jobs Automaticos de Interfases</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>PROGRAM</PARAMETER>
+       <TYP>PROGRAMM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>FILENAME</PARAMETER>
+       <TYP>DDFILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>JOBNAME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>JOBNA_07A</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>STATUS</PARAMETER>
+       <TYP>ABI_EXEC_STTS</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>REASON</PARAMETER>
+       <TYP>IS_FAILURE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>PROGRAM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nombre de programa ABAP</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FILENAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nombre del fichero</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>JOBNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nombre del job de fondo</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Status de ejecución</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>REASON</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mensaje de error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
